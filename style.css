@@ -1,0 +1,1162 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/************************************************* Header *************************************************/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: white;
+}
+
+.branding h1 {
+    font-weight: 600;
+    color: #032859;
+    margin: 0;
+    font-size: 25px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu li a {
+    color: #032859;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+#menu-icon {
+  font-size: 40px;
+  color: #032859;
+  cursor: pointer;
+  display: none;
+}
+
+/************************************************* Home *************************************************/
+
+.hero {
+    position: relative;
+    background-image: url('assets/header.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.hero-text h1 {
+    color: white;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+}
+
+.hero-text h2 {
+    color: white;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    font-size: 35px;
+}
+
+.hero-text p {
+    color: white;
+    font-size: 20px;
+}
+
+.header-button {
+  width: 50%;
+  background-color: white;
+  color: #032859;
+  border: none;
+  padding: 10px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/************************************************* First Section "Individuelle Beratung für Eltern, Kinder und Jugendliche" *************************************************/
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Abstand zwischen den Blöcken */
+    background: white;
+    color: black;
+    padding: 80px 100px;
+    box-sizing: border-box;
+}
+
+.block {
+    flex-basis: 100%; /* Bei kleineren Bildschirmen nehmen die Blöcke die volle Breite ein */
+}
+
+@media (min-width: 600px) {
+    .block {
+        flex-basis: 48%; /* Bei größeren Bildschirmen nehmen die Blöcke etwa die Hälfte der Breite ein */
+    }
+}
+
+.content h2 {
+    font-weight: 600;
+}
+
+.content p {
+    font-weight: 300;
+}
+
+/************************************************* Second Section "Systemisch-Bindungsorientierte Haltung" *************************************************/
+
+.dark-section {
+    display: flex;
+    background: #032859;
+    color: white;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: stretch;
+}
+
+.dark-section img {
+    width: 30%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.dark-text {
+    margin-left: 5%;
+    padding: 100px 100px 0 0;
+}
+
+.dark-text h2 {
+    font-weight: 700;
+}
+
+.dark-text p {
+    font-weight: 300;
+}
+
+/*************************************************  Third Section "Beratungsspektrum" ************************************************/
+
+.icons-section {
+    background: white;
+    color: #032859;
+    padding: 100px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.icon-card {
+    width: 23%;
+    margin: 1%;
+    text-align: center;
+}
+
+.icon-card img {
+    height: 40px;
+}
+
+.icon-card p {
+    font-weight: 300;
+}
+
+.icons-section h2 {
+    font-weight: 700;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.four-icons-per-row .icon-card {
+    width: 23%;
+    margin: 1%;
+}
+
+/************************************************* Fourth Section "Referate und Teamtage für Schulen" *************************************************/
+
+.dark-icons-section {
+    background: #032859;
+    color: white;
+}
+
+.three-icons-per-row .icon-card {
+    width: 30%;
+    margin: 1.5%;
+}
+
+/*************************************************  Fifth Section ""Über mich" *************************************************/
+.about-me-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    box-sizing: border-box;
+    margin-top: -50px;
+}
+
+.background-image {
+    position: absolute;
+    left: 100px;
+    width: 50%;
+    height: calc(50% + 100px);
+    object-fit: cover;
+}
+
+.text-box {
+    position: relative;
+    background-color: #032859;
+    color: white;
+    padding: 50px;
+    width: 50%;
+    margin-left: 500px;
+    margin-top: 300px;
+}
+
+.text-box h2 {
+    font-weight: 700;
+}
+
+.text-box h3 {
+    font-weight: 500;
+}
+
+.text-box p {
+    font-weight: 300;
+}
+
+/************************************************* Sixth Section "Persönliches" *************************************************/
+.personal-section {
+    background-color: #032859;
+    color: white;
+    text-align: center;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.section-title {
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.flex-container-personal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flex-item-personal {
+    flex-basis: 30%;
+    margin: 20px;
+    text-align: center;
+}
+
+.flex-item-personal img {
+    width: 40px;
+}
+
+.flex-item-personal:nth-child(4),
+.flex-item-personal:nth-child(5) {
+    flex-basis: 40%;
+}
+
+/************************************************* Seventh Section "Kontakt" *************************************************/
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.form-container {
+    flex: 1;
+    margin-right: 50px;
+}
+
+.form-group p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: light;
+    margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.info-box {
+    flex: 1;
+    background-color: #032859;
+    color: white;
+    padding: 40px;
+}
+
+.info-text {
+    margin-bottom: 30px;
+}
+
+#map {
+    height: 300px;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.input-field-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.input-field-row > .input-field {
+    width: 48%;
+}
+
+.input-field input,
+.input-field textarea {
+    border: none;
+    border-bottom: 0.1px solid black;
+    background: none;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: light;
+    padding-bottom: 10px;
+}
+
+.input-field input::placeholder,
+.input-field textarea::placeholder {
+    color: black;
+}
+
+.input-field input:focus,
+.input-field textarea:focus {
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+.submit-button {
+    width: 100%;
+    background-color: #032859;
+    color: white;
+    border: none;
+    padding: 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #021c3a;
+}
+
+.contact-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #032859;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.contact-container .captcha {
+  margin: 30px 0;
+}
+
+.contact-container .captcha .preview {
+  color: #555;
+  width: 100%;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  letter-spacing: 8px;
+  border: 1px dashed #888;
+  font-family: monospace;
+  margin-bottom: 5px;
+}
+
+.contact-container .captcha .preview span {
+  display: inline-block;
+  user-select: none;
+}
+
+.contact-container .captcha .captcha-form {
+  display: flex;
+  width: 100%;
+}
+
+.contact-container .captcha .captcha-form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #888;
+}
+
+.contact-container .captcha .captcha-form .captcha-refresh {
+  width: 40px;
+  border: none;
+  outline: none;
+  background: #888;
+  color: #eee;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.container-send-alert {
+  text-align: center;
+  margin-top: 10px;
+  position: relative;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+}
+
+/************************************************* Eight Section "Kosten" *************************************************/
+
+
+.section-dark {
+    background-color: #032859;
+    color: #ffffff;
+    padding: 100px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.section-dark h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/************************************************* Footer *************************************************/
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  padding: 20px 500px;
+}
+
+.footer-item {
+  color: #032859;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+
+/************************************************ Responsive ************************************************/
+
+/************************************************ Media Query (1800px and above) ************************************************/
+
+@media screen and (min-width: 1800px) {
+    body {
+      transition: .2s;
+    }
+
+    header {
+        padding: 30px 150px;
+    }
+
+    .branding h1 {
+        font-size: 35px;
+    }
+
+    .menu {
+        gap: 40px;
+    }
+
+    .menu li a {
+        font-size: 18px;
+    }
+
+    .hero {
+      height: 100vh;
+    }
+
+    .hero-text h1 {
+      font-size: 60px;
+    }
+
+    .hero-text h2 {
+      font-size: 40px;
+    }
+
+    .hero-text p {
+      font-size: 24px;
+      max-width: 800px;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+
+    .content {
+       padding: 100px 150px;
+    }
+
+    .content h2 {
+       font-size: 36px;
+       padding: 0 100;
+    }
+
+    .content p {
+       font-size: 18px;
+       padding: 0 100;
+       margin: 0 auto;
+    }
+
+    .dark-section img {
+        object-fit: cover;
+        width: 33%;
+        height: auto;
+    }
+
+    .dark-section {
+        max-height: 500px;
+    }
+
+    .dark-text {
+      padding: 60px 100px 50px 0;
+    }
+
+    .dark-text h2 {
+        font-size: 36px;
+    }
+
+    .dark-text p {
+        font-size: 18px;
+        margin: auto;
+    }
+
+    .icons-section {
+        padding: 120px;
+    }
+
+    .icon-card {
+        width: 23%;
+        margin: 1.5%;
+    }
+
+    .icon-card img {
+        height: 60px;
+    }
+
+    .icon-card p {
+        font-size: 18px;
+    }
+
+    .icons-section h2 {
+        font-size: 36px;
+    }
+
+    .about-me-section {
+        padding: 120px;
+    }
+
+    .background-image {
+        left: 200px;
+        width: 50%;
+        height: calc(50% + 50px);
+    }
+
+    .text-box {
+        padding: 60px;
+        width: 50%;
+        margin-left: 700px;
+        margin-top: 400px;
+    }
+
+    .text-box h2, .text-box h3 {
+        font-size: 28px;
+    }
+
+    .text-box p {
+        font-size: 18px;
+    }
+
+    .personal-section {
+        padding: 120px;
+    }
+
+    .flex-item-personal {
+        flex-basis: 20%;
+        margin: 30px;
+    }
+
+    .flex-item-personal img {
+        width: 60px;
+    }
+
+    .flex-item-personal:nth-child(4),
+    .flex-item-personal:nth-child(5) {
+        flex-basis: 30%;
+    }
+
+    .section-title {
+        font-size: 2.5em;
+    }
+
+    .personal-section p {
+        font-size: 18px;
+    }
+
+    .icons-section h2 {
+        font-size: 36px;
+    }
+
+    #map {
+        height: 500px;
+    }
+    .contact-container {
+      padding: 200px;
+    }
+
+    .form-container {
+      margin-right: 80px;
+    }
+
+    .info-box {
+      padding: 60px;
+    }
+
+    .input-field input,
+    .input-field textarea {
+      font-size: 16px;
+    }
+
+    .submit-button {
+      font-size: 18px;
+      padding: 20px 0;
+    }
+
+    .contact-container p {
+      font-size: 18px;
+    }
+
+    .contact-container h2 {
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
+
+    .form-group p {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: light;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid black;
+    }
+
+    .input-field {
+    margin-bottom: 50px;
+    }
+
+    .section-dark p {
+    font-size: 18px;
+    }
+
+    .section-dark h2 {
+      font-size: 36px;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-around;
+      background-color: white;
+      padding: 20px 200px;
+    }
+
+    footer p a {
+      text-decoration: none;
+    }
+  }
+
+
+/************************************************ Media Query (1300px to 1800px) ************************************************/
+@media only screen and (max-width: 1300px) {
+    body {
+      transition: .2s;
+    }
+
+    header {
+        padding: 20px 30px;
+    }
+    .branding h1 {
+        font-size: 18px;
+    }
+    .menu li a {
+        font-size: 13px;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+    .hero-text h2 {
+        font-size: 30px;
+    }
+    .hero-text p {
+        font-size: 18px;
+    }
+
+    .content {
+        padding: 30px 60px;
+    }
+    .content h2 {
+        font-size: 20px;
+    }
+    .content p {
+        font-size: 14px;
+    }
+
+    .dark-section img {
+       object-fit: cover;
+       width: 33%;
+       height: auto;
+    }
+   .dark-section {
+       max-height: 900px;
+   }
+   .dark-text {
+     padding: 60px 100px 50px 0;
+   }
+   .dark-text p {
+       font-size: 14px;
+   }
+   .dark-text h2 {
+       font-size: 20px;
+   }
+
+   .icon-card {
+       width: 31%;
+       margin: 1%;
+   }
+   .icon-card p {
+       font-size: 14px;
+   }
+   .icons-section {
+        padding: 60px 30px;
+    }
+    .icons-container {
+        justify-content: center;
+    }
+    .icons-section h2 {
+        font-size: 20px;
+    }
+
+    .about-me-section {
+        padding: 60px;
+    }
+    .background-image {
+        width: 50%;
+        height: calc(50% + 200px);
+    }
+    .text-box {
+        padding: 30px;
+        width: 50%;
+        margin-left: 400px;
+        margin-top: 100px;
+    }
+    .text-box p {
+        font-size: 14px;
+    }
+    .text-box h2 {
+        font-size: 20px;
+    }
+
+    .personal-section {
+           padding: 60px 30px;
+       }
+    .flex-item-personal {
+          flex-basis: 30%;
+       }
+    .flex-item-personal:nth-child(4),
+    .flex-item-personal:nth-child(5) {
+           flex-basis: 30%;
+       }
+    .flex-item-personal p {
+      font-size: 14px;
+    }
+    .flex-item-personal h2 {
+        font-size: 20px;
+    }
+
+    .section-dark p {
+      font-size: 14px;
+    }
+    .section-dark h2 {
+        font-size: 20px;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-around;
+      background-color: white;
+      padding: 20px 200px;
+    }
+
+}
+
+/************************************************ Media Query (1110px to 1300px) ************************************************/
+@media only screen and (max-width: 1110px) {
+  #menu-icon {
+    display: block;
+  }
+  .menu {
+    position: absolute;
+    top: 68px;
+    width: 350px;
+    height: 400px;
+    background: #032859;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 100;
+    padding-top: 30px;
+    display: none;
+  }
+
+  .menu li a {
+    color: white;
+    display: block;
+    margin: 10px 0;
+    padding: 0 auto;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all .50s ease;
+  }
+
+  .menu {
+    margin-top: 20px;
+  }
+
+  .menu.open {
+   display: flex;
+   right: 2%;
+  }
+
+  .text-box {
+     padding: 40px;
+     width: 50%;
+     margin-left: 400px;
+     margin-top: 100px;
+   }
+
+   .dark-text {
+     margin-left: 5%;
+     padding: 50px 50px 50px 0;
+   }
+
+   .background-image {
+     position: absolute;
+     left: 100px;
+     width: 50%;
+     height: calc(50% + 100px);
+     object-fit: cover;
+   }
+
+   .text-box {
+     position: relative;
+     background-color: #032859;
+     color: white;
+     padding: 50px;
+     width: 50%;
+     margin-top: 300px;
+   }
+
+   .contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 100px;
+    box-sizing: border-box;
+  }
+
+  .form-container {
+    margin-right: 0px;
+  }
+
+  .submit-button {
+    margin-bottom: 50px;
+  }
+}
+
+
+/************************************************  Media Query (930px to 1110px)  ************************************************/
+@media screen and (max-width: 930px) {
+  .about-me-section {
+  flex-direction: column;
+  padding: 0px;
+  }
+
+  .background-image {
+    position: static;
+    width: 700px;
+    height: auto;
+    margin-top: 100px;
+  }
+
+  .text-box {
+    position: static;
+    background-color: #032859;
+    color: white;
+    padding: 50px;
+    width: 600px;
+    margin: 0;
+    margin-bottom: 100px;
+  }
+
+  .icon-card img {
+    height: 30px;
+  }
+
+  .flex-item-personal img {
+    width: 30px;
+  }
+}
+
+/************************************************ Media Query (760px to 930px) ************************************************/
+@media screen and (max-width: 760px) {
+  .four-icons-per-row .icon-card {
+      width: 45%;
+      margin: 1%;
+  }
+
+  .three-icons-per-row .icon-card {
+      width: 45%;
+      margin: 1.5%;
+  }
+
+  .hero{
+    height: 80vh;
+  }
+
+}
+
+/************************************************ Media Query (700px to 760px) ************************************************/
+@media screen and (max-width: 700px) {
+  .dark-section {
+    flex-direction: column;
+    align-items: center;
+    max-height: none;
+  }
+
+  .dark-section img {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    object-fit: cover;
+  }
+
+  .dark-text {
+    margin-left: 0;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .background-image {
+    width: 500px;
+    height: auto;
+    margin-top: 100px;
+  }
+
+  .text-box {
+    padding: 50px;
+    width: 400px;
+    margin: 0;
+    margin-bottom: 100px;
+  }
+
+  .contact-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 50px;
+   box-sizing: border-box;
+ }
+
+ .section-dark {
+     padding: 100px 50px;
+ }
+
+ footer {
+   padding: 20px 50px;
+ }
+}
+
+/************************************************ Media Query (550px to 700px) ************************************************/
+@media screen and (max-width: 550px) {
+  .four-icons-per-row .icon-card {
+      width: 51%;
+      margin: 1%;
+      margin-top: 25px;
+  }
+
+  .three-icons-per-row .icon-card {
+      width: 51%;
+      margin: 1.5%;
+      margin-top: 25px;
+  }
+
+  .background-image {
+    width: 400px;
+    height: auto;
+    margin-top: 100px;
+  }
+
+  .text-box {
+    padding: 30px;
+    width: 340px;
+    margin: 0;
+    margin-bottom: 100px;
+  }
+
+  .flex-item-personal {
+      flex-basis: 80%;
+      margin: 20px;
+      text-align: center;
+  }
+
+  .flex-item-personal:nth-child(4),
+  .flex-item-personal:nth-child(5) {
+      flex-basis: 80%;
+  }
+
+
+}
+
+/************************************************ Media Query (460px to 550px) ************************************************/
+@media screen and (max-width: 460px) {
+  .content p {
+    font-size: 12px;
+  }
+
+  .hero-text p {
+    font-size: 15px;
+    margin-top: 30px;
+  }
+
+  .dark-text p  {
+    font-size: 12px;
+  }
+
+  .icon-card p {
+    font-size: 12px;
+  }
+
+  .text-box p {
+    font-size: 12px;
+  }
+
+  .flex-item-personal p {
+    font-size: 12px;
+  }
+
+  .section-dark p {
+    font-size: 12px;
+  }
+}
+
+/************************************************ Media Query (400px to 460px) ************************************************/
+@media screen and (max-width: 400px) {
+  .background-image {
+    width: 300px;
+    height: auto;
+    margin-top: 100px;
+  }
+
+  .text-box {
+    padding: 30px;
+    width: 240px;
+    margin: 0;
+    margin-bottom: 100px;
+  }
+
+  .hero-text h1 {
+    font-size: 30px;
+  }
+
+  .hero-text h2 {
+    font-size: 20px;
+  }
+
+  .content {
+    padding: 30px;
+  }
+
+  .dark-text {
+    padding: 30px;
+  }
+
+  .contact-container {
+    padding: 30px;
+  }
+
+  .info-box {
+    background-color: white;
+    color: #032859;
+    padding: 0px;
+  }
+
+  .section-dark{
+    padding: 30px;
+  }
+
+  .menu {
+    width: 300px;
+  }
+
+  .menu li a {
+    font-size: 14px;
+  }
+
+  }
